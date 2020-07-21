@@ -152,7 +152,7 @@ namespace Perc
                     WritePyramid(fal[f], x);
                     if (p.Feed(fal[f]))
                     {
-                        Console.WriteLine("Неправильно! СТРАДАЙ!\n\n");
+                        Console.WriteLine("Неправильно - ложное срабатывание\n\n");
                         wrongpos++;
                         p.DecreaseWhereNeeded(fal[f]);
                     }
@@ -172,7 +172,7 @@ namespace Perc
                     WritePyramid(tr[f], x);
                     if (!p.Feed(tr[f]))
                     {
-                        Console.WriteLine("Неправильно... но ты ведь не специально, правда?)\n\n");
+                        Console.WriteLine("Неправильно - не узнал\n\n");
                         wrongfalse++;
                         p.IncreaseWhereNeeded(tr[f]);
                     }
